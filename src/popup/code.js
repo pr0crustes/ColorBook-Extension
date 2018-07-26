@@ -6,6 +6,7 @@ window.onload = (function () {
 function linkHandlers() {
     document.getElementById("button-save").onclick = savePrefs;
     document.getElementById("button-reset").onclick = resetPrefs;
+    document.getElementById("button-source").onclick = openSource;
 }
 
 function loadPrefs() {
@@ -34,4 +35,8 @@ function resetPrefs() {
     chrome.storage.sync.set({'pref_is_random': false});
     chrome.storage.sync.set({'pref_color': "4267b2"});
     loadPrefs();
+}
+
+function openSource() {
+    window.open('https://github.com/pr0crustes/ColorBook-Extension', '_blank');
 }
