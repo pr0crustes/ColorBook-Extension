@@ -22,5 +22,9 @@
 		"default_icon": "logo.png",
 		"default_popup": "popup/index.html",
 		"default_title": "ColorBook Settings"
+	},
+
+	"icons": {
+	   "128": "logo.png" 
 	}
 }
