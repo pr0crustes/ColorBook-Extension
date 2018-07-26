@@ -3,6 +3,10 @@
 	"name": "ColorBook-Extension",
 	"version": "0.1",
 
+	"permissions": [
+		"storage"
+	],
+
 	"content_scripts": [
 		{
 			"matches": [
@@ -12,6 +16,11 @@
 				"content.js"
 			]
 		}
-	]
+	],
 
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup/index.html",
+		"default_title": "ColorBook Settings"
+	}
 }
